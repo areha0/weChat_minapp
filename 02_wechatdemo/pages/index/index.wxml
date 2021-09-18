@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<!-- 实现入口静态页面的搭建 -->
+<view class="index-container">
+  <image src="../../static/images/avatar.jpeg" class="avatar-image"></image>
+  <text class="nick-name">不待</text>
+  <view class="welcome">
+    <text>Hello world</text>
+  </view>
+</view>
