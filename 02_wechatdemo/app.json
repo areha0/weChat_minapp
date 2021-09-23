@@ -1,10 +1,12 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/logs/logs"
   ],
   "window": {
     "navigationBarTitleText": "shuosuo",
     "navigationBarBackgroundColor": "#f0f",
     "navigationBarTextStyle": "white"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

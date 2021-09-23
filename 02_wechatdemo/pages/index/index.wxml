@@ -1,9 +1,17 @@
 <!--pages/index/index.wxml-->
-<!-- 实现入口静态页面的搭建 -->
+<!-- 1. 实现入口静态页面的搭建 -->
 <view class="index-container">
   <image src="../../static/images/avatar.jpeg" class="avatar-image"></image>
-  <text class="nick-name">不待</text>
-  <view class="welcome">
+  <text class="nick-name">{{message}}</text>
+  <!-- 2. 绑定事件: 有两种绑定方法, bindtap(绑定冒泡事件), catchtap(绑定非冒泡事件) -->
+  <!-- 注意: 子元素一定要明确绑定的事件类型 -->
+  <!-- <view class="welcome" catchtap="handleParent">
+    <text catchtap="handleChild">Hello world</text>
+  </view> -->
+
+  <!-- 3. 路由跳转, 在添加的事件中进行 -->
+  <view class="welcome" bindtap="toLogs">
     <text>Hello world</text>
   </view>
+
 </view>
